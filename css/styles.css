@@ -1,17 +1,42 @@
+*{
+    background-color: bisque;
+}
+
 h1{
     background-color: aquamarine;
+    color: cornflowerblue;
     text-align: center;
     border-style: dotted;
+    width: 500px;
+    margin-left: 400px;
 }
 
 h2{
-    color: cadetblue;
+    background-color: aquamarine;
+    color: cornflowerblue;
     text-align: center;
+    border-style: groove;
+    width: 500px;
+    margin-left: 400px;
 }
+
 ul{
-    background: blueviolet;
-    color: bisque;
+    color: cadetblue
 }
 
+ol{
+    border-style: groove;
+    width: 450px;
+    margin-left: 400px;
+    
+}
 
+h3{
+    background-color: aquamarine;
+    color: cornflowerblue;
+    text-align: center;
+    border-style: ridge;
+    width: 500px;
+    margin-left: 400px;
+}
 
