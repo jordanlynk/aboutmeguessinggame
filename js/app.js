@@ -88,37 +88,41 @@ function question6(){
     }
 }
 
-var favoriteIceCream = new Array('rocky road', 'strawberry', 'vanilla', 'half baked', 'chocolate chip cookie dough');
-
-var guesses = 0;
-var maxNumberOfGuesses = 6;
-var theCorrectAnswer = false;
-
-while (!theCorrectAnswer && guesses < maxNumberOfGuesses) {
-
+function question7(personName){
+    var favoriteIceCream = new Array('rocky road', 'strawberry', 'vanilla', 'half baked', 'chocolate chip cookie dough');
+    var guesses = 0;
+    var maxNumberOfGuesses = 6;
+    var theCorrectAnswer = false;
+    while (!theCorrectAnswer && guesses < maxNumberOfGuesses) {
        var userAnswer = prompt('List one of my favorite ice creams');
-
        for (var i = 0; i < favoriteIceCream.length; i++) {
-           if (userAnswer.toLowerCase() === favoriteIceCream[i]){
-           alert('You are absolutley right!!');
-           theCorrectAnswer = true;
-           counttheCorrectAnswers++;
-           break;
-     } else if (i === favoriteIceCream.length - 1) {
-           alert('Unfortunatley, that is not one of them');
-     }
-
-   }    
-   guesses++
+            if (userAnswer.toLowerCase() === favoriteIceCream[i]){
+                alert('You are absolutley right!!');
+                theCorrectAnswer = true;
+                counttheCorrectAnswers++;
+                break;
+            } else if (i === favoriteIceCream.length - 1) {
+                alert('Unfortunatley, that is not one of them');
+            }
+        }    
+        guesses++
+    }
+    if (!theCorrectAnswer) {
+        alert('That is wrong, sorry you have ran out of guesses. The possible answers were ' + favoriteIceCream[0] + 
+        ', ' + favoriteIceCream[1] + ', ' + favoriteIceCream[2] + ', ' + favoriteIceCream[3] + ', ' + favoriteIceCream[4] + '.');
+    }
+    var icecream = '';
+    for (var i=0; i<favoriteIceCream.length; i++){
+        icecream+=favoriteIceCream[i] + ', ';
+    }
+    alert(personName +' You got ' + counttheCorrectAnswers + ' answer(s) correct out of 7');
 }
 
-if (!theCorrectAnswer) {
-    alert('That is wrong, sorry you have ran out of guesses');
-}
-
-var icecream = '';
-for (var i=0; i<favoriteIceCream.length; i++){
-    icecream+=favoriteIceCream[i] + ', ';
-}
-
-alert('You got ' + counttheCorrectAnswers + ' answer(s) correct out of 7');
+var names = userName1();
+question1();
+question2();
+question3();
+question4();
+question5();
+question6();
+question7(names);
