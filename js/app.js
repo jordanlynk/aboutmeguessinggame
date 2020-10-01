@@ -12,7 +12,7 @@ if(userName.toLowerCase() === 'yes' || userName.toLowerCase() === 'y'){
     alert('Gold star for you, you are right!');
     counttheCorrectAnswers++;
     // console.log('Gold star for you, you are right');
-}  else {
+}   else {
     alert('No gold star, you are so close!');
     // console.log('No gold star, you are so close!');
 }
@@ -66,14 +66,14 @@ for (var i = 0; i < 4; i++){
     var number = prompt('Enter a number between 1 and 10: ');
     if ((i === 3) && (correctNumber !== parseInt(number))) {
         alert('Sooooo close, the correct number is 8');
-    } else if (parseInt(correctNumber) === number) {
+    }   else if (parseInt(correctNumber) === number) {
         alert('You entered the right number!'); 
         counttheCorrectAnswers++;
         break;
-    } else if (number > correctNumber) {
+    }   else if (number > correctNumber) {
         alert('guess something lower!');
     }
-      else if (number < correctNumber) {
+        else if (number < correctNumber) {
         alert('guess something higher!');
       }
 }
@@ -90,12 +90,12 @@ while (!theCorrectAnswer && guesses < maxNumberOfGuesses) {
 
        for (var i = 0; i < favoriteIceCream.length; i++) {
            if (userAnswer.toLowerCase() === favoriteIceCream[i]){
-         alert('You are absolutley right!!');
-         theCorrectAnswer = true;
-         counttheCorrectAnswers++;
-         break;
+           alert('You are absolutley right!!');
+           theCorrectAnswer = true;
+           counttheCorrectAnswers++;
+           break;
      } else if (i === favoriteIceCream.length - 1) {
-         alert('Unfortunatley, that is not one of them');
+           alert('Unfortunatley, that is not one of them');
      }
 
    }    
