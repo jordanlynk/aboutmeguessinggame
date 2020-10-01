@@ -70,21 +70,22 @@ function question5(){
     }
 }
 
-var correctNumber = 8;
-for (var i = 0; i < 4; i++){
+function question6(){
+    var correctNumber = 8;
     var number = prompt('Enter a number between 1 and 10: ');
-    if ((i === 3) && (correctNumber !== parseInt(number))) {
-        alert('Sooooo close, the correct number is 8');
-    }   else if (parseInt(correctNumber) === number) {
-        alert('You entered the right number!'); 
-        counttheCorrectAnswers++;
-        break;
-    }   else if (number > correctNumber) {
-        alert('guess something lower!');
+    for (var i = 0; i < 4; i++){
+        if ((i === 3) && (correctNumber !== parseInt(number))) {
+            alert('Sooooo close, the correct number is 8');
+        } else if  (number < correctNumber) {
+            var number = prompt('guess something higher!');
+        } else if (number > correctNumber) {
+            var number = prompt('guess something lower!');
+        } else if (parseInt(number) === correctNumber) {
+            alert('You entered the right number!'); 
+            counttheCorrectAnswers++;
+            break;
+        }
     }
-        else if (number < correctNumber) {
-        alert('guess something higher!');
-      }
 }
 
 var favoriteIceCream = new Array('rocky road', 'strawberry', 'vanilla', 'half baked', 'chocolate chip cookie dough');
