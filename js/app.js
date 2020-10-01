@@ -2,9 +2,13 @@
 
 var counttheCorrectAnswers = 0;
 
-var userName = prompt('Hi there! What is your name?');
-console.log('This is the user name, ' + userName);
-alert('Nice to meet you, welcome to my site ' + userName);
+function userName1(){
+    var userName = prompt('Hi there! What is your name?');
+    console.log('This is the user name, ' + userName);
+    alert('Nice to meet you, welcome to my site ' + userName);
+    return userName;
+}
+
 
 var userName = prompt('Is my name Jordan?')
 
