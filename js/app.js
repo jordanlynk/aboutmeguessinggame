@@ -21,15 +21,17 @@ function question1(){
         // console.log('No gold star, you are so close!');
     }
 }
-var userAnimal = prompt('Do I love animals?')
 
-if(userAnimal.toLowerCase() === 'yes' || userAnimal.toLowerCase() === 'y'){
-    alert('My goodness, you know me so well');
-    counttheCorrectAnswers++;
-    // console.log('My goodness, you know me so well');
-}   else {
-    alert('You just do not get me');
-    // console.log('You just do not get me');
+function question2(){
+    var userAnimal = prompt('Do I love animals?')
+    if(userAnimal.toLowerCase() === 'yes' || userAnimal.toLowerCase() === 'y'){
+        alert('My goodness, you know me so well');
+        counttheCorrectAnswers++;
+        // console.log('My goodness, you know me so well');
+    }else {
+        alert('You just do not get me');
+        // console.log('You just do not get me');
+    }
 }
 
 var userLifeGuard = prompt('Do I appear to you as a previous lifeguard?')
