@@ -10,17 +10,17 @@ function userName1(){
 }
 
 
-var userName = prompt('Is my name Jordan?')
-
-if(userName.toLowerCase() === 'yes' || userName.toLowerCase() === 'y'){
-    alert('Gold star for you, you are right!');
-    counttheCorrectAnswers++;
-    // console.log('Gold star for you, you are right');
-}   else {
-    alert('No gold star, you are so close!');
-    // console.log('No gold star, you are so close!');
+function question1(){
+    var userName = prompt('Is my name Jordan?')
+    if(userName.toLowerCase() === 'yes' || userName.toLowerCase() === 'y'){
+        alert('Gold star for you, you are right!');
+        counttheCorrectAnswers++;
+        // console.log('Gold star for you, you are right');
+    }else {
+        alert('No gold star, you are so close!');
+        // console.log('No gold star, you are so close!');
+    }
 }
-
 var userAnimal = prompt('Do I love animals?')
 
 if(userAnimal.toLowerCase() === 'yes' || userAnimal.toLowerCase() === 'y'){
