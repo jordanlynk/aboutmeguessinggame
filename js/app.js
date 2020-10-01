@@ -46,15 +46,16 @@ function question3(){
     }
 }
 
-var userLOTR = prompt('Do you think I love LOTR?')
-
-if (userLOTR.toLowerCase() === 'yes' || userLOTR.toLowerCase() === 'y'){
-   alert('Correct! You shall pass!');
-   counttheCorrectAnswers++;
-//    console.log('Correct! You shall pass!');
-}  else {
-   alert('Incorrect...YOU SHALL NOT PASS!');
-//    console.log('Incorrect...YOU SHALL NOT PASS!'); 
+function question4(){
+    var userLOTR = prompt('Do you think I love LOTR?')
+    if (userLOTR.toLowerCase() === 'yes' || userLOTR.toLowerCase() === 'y'){
+        alert('Correct! You shall pass!');
+        counttheCorrectAnswers++;
+        //    console.log('Correct! You shall pass!');
+    }  else {
+        alert('Incorrect...YOU SHALL NOT PASS!');
+        //    console.log('Incorrect...YOU SHALL NOT PASS!'); 
+    }
 }
 
 var userConfidence = prompt('Do you think I enjoy public speaking?')
