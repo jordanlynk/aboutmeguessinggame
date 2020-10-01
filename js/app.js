@@ -34,15 +34,16 @@ function question2(){
     }
 }
 
-var userLifeGuard = prompt('Do I appear to you as a previous lifeguard?')
-
-if(userLifeGuard.toLowerCase() === 'yes' || userLifeGuard.toLowerCase() === 'y'){
-    alert('Heck yeah, I can save you!');
-    counttheCorrectAnswers++;
-    // console.log('Heck yeah, I can save you!');
-}   else {
-    alert('Yikes that is wrong, let us hope you do not need saving');
-    // console.log('Yikes that is wrong, let us hope you do not need saving');
+function question3(){
+    var userLifeGuard = prompt('Do I appear to you as a previous lifeguard?')
+    if(userLifeGuard.toLowerCase() === 'yes' || userLifeGuard.toLowerCase() === 'y'){
+        alert('Heck yeah, I can save you!');
+        counttheCorrectAnswers++;
+        // console.log('Heck yeah, I can save you!');
+    }else {
+        alert('Yikes that is wrong, let us hope you do not need saving');
+        // console.log('Yikes that is wrong, let us hope you do not need saving');
+    }
 }
 
 var userLOTR = prompt('Do you think I love LOTR?')
