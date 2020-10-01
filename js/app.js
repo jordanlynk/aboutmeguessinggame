@@ -58,15 +58,16 @@ function question4(){
     }
 }
 
-var userConfidence = prompt('Do you think I enjoy public speaking?')
-
-if (userConfidence.toLowerCase() === 'yes' || userConfidence.toLowerCase() === 'y'){
-    alert('I do not but I am going to get there, thanks for the confidence though!');
-    counttheCorrectAnswers++;
-    // console.log('I do not but I am going to get there, thanks for the confidence though!');
-}   else {
-    alert('You have marked no, boooo. Just kidding, I do not. I am hoping to get there one day');
-    // console.log('You have marked no, boooo. Just kidding, I do not. I am hoping to get there one day');
+function question5(){
+    var userConfidence = prompt('Do you think I enjoy public speaking?')
+    if (userConfidence.toLowerCase() === 'yes' || userConfidence.toLowerCase() === 'y'){
+        alert('I do not but I am going to get there, thanks for the confidence though!');
+        counttheCorrectAnswers++;
+        // console.log('I do not but I am going to get there, thanks for the confidence though!');
+    }else {
+        alert('You have marked no, boooo. Just kidding, I do not. I am hoping to get there one day');
+        // console.log('You have marked no, boooo. Just kidding, I do not. I am hoping to get there one day');
+    }
 }
 
 var correctNumber = 8;
