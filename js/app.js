@@ -4,7 +4,6 @@ var counttheCorrectAnswers = 0;
 
 function userName1(){
     var userName = prompt('Hi there! What is your name?');
-    console.log('This is the user name, ' + userName);
     alert('Nice to meet you, welcome to my site ' + userName);
     return userName;
 }
@@ -15,10 +14,8 @@ function question1(){
     if(userName.toLowerCase() === 'yes' || userName.toLowerCase() === 'y'){
         alert('Gold star for you, you are right!');
         counttheCorrectAnswers++;
-        // console.log('Gold star for you, you are right');
     }else {
         alert('No gold star, you are so close!');
-        // console.log('No gold star, you are so close!');
     }
 }
 
@@ -27,10 +24,8 @@ function question2(){
     if(userAnimal.toLowerCase() === 'yes' || userAnimal.toLowerCase() === 'y'){
         alert('My goodness, you know me so well');
         counttheCorrectAnswers++;
-        // console.log('My goodness, you know me so well');
     }else {
         alert('You just do not get me');
-        // console.log('You just do not get me');
     }
 }
 
@@ -39,10 +34,8 @@ function question3(){
     if(userLifeGuard.toLowerCase() === 'yes' || userLifeGuard.toLowerCase() === 'y'){
         alert('Heck yeah, I can save you!');
         counttheCorrectAnswers++;
-        // console.log('Heck yeah, I can save you!');
     }else {
         alert('Yikes that is wrong, let us hope you do not need saving');
-        // console.log('Yikes that is wrong, let us hope you do not need saving');
     }
 }
 
@@ -51,10 +44,8 @@ function question4(){
     if (userLOTR.toLowerCase() === 'yes' || userLOTR.toLowerCase() === 'y'){
         alert('Correct! You shall pass!');
         counttheCorrectAnswers++;
-        //    console.log('Correct! You shall pass!');
     }  else {
         alert('Incorrect...YOU SHALL NOT PASS!');
-        //    console.log('Incorrect...YOU SHALL NOT PASS!'); 
     }
 }
 
@@ -63,10 +54,8 @@ function question5(){
     if (userConfidence.toLowerCase() === 'yes' || userConfidence.toLowerCase() === 'y'){
         alert('I do not but I am going to get there, thanks for the confidence though!');
         counttheCorrectAnswers++;
-        // console.log('I do not but I am going to get there, thanks for the confidence though!');
     }else {
         alert('You have marked no, boooo. Just kidding, I do not. I am hoping to get there one day');
-        // console.log('You have marked no, boooo. Just kidding, I do not. I am hoping to get there one day');
     }
 }
 
